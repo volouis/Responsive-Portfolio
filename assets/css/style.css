@@ -70,7 +70,6 @@ li{
     border: .5px;
     border-color: #dddddd;
     border-style: solid;
-    width: 680px;
 }
 
 #input_name{
@@ -112,40 +111,110 @@ footer{
 }
 
 .portfolio_pic{
-    height: 200px;
-    width: 300px;
-    margin-bottom: 20px;
+    height: 100%;
+    width: 100%;
 }
 
 .portfolio_title{
-    margin: auto;
     font-family: 'Georgia', Times, Times New Roman, serif;
     color: #ffffff;
-    position: absolute; 
-    top: 50%;
-    left: 50%; 
-    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .pt{
     background-color: #4aaaa5;
-    width: 300px;
-    height: 50px;
-    position: absolute;
+    padding: 1px;
+    position: relative;
+    bottom: 80px;
 }
 
 .container{
     overflow: auto;
-}
-
-.col-1{
-    margin-right: 20px;
+    margin: 0 auto;
 }
 
 .col{
+    width: 300px;
+    height: 250px;
+    margin: 10px;
     float: left;
+} 
+
+@media screen and (max-width: 980px){
+    #name{
+        margin-left: 20px;
+    }
+
+    .header-list{
+        margin-right: 20px;
+    }
+
+    #page_info{
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 680px;
+    }
+    
 }
 
 @media screen and (max-width: 786px){
+    #name{
+        margin-left: 20px;
+    }
 
+    .header-list{
+        margin-right: 20px;
+    }
+
+    #page_info{
+        margin: auto;
+        margin-bottom: 20px;
+        max-width: 696px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .container{
+        margin: auto;
+    }
+
+     .row{
+         margin: auto;
+     }
+
+}
+
+@media screen and (max-width: 640px){
+    #name{
+        text-align: center;
+        float: none;
+        margin: 0;
+    }
+
+    .header-list{
+        text-align: center;
+        float: none;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .profile_pic{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        float: none;
+    }
+    
+    #page_info{
+        margin: auto;
+        margin-bottom: 20px;
+        max-width: 580px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .col{
+        width: 100%;
+        height: 500px;
+    }
 }
